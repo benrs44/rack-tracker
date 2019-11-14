@@ -8,6 +8,7 @@
     document,'script','//connect.facebook.net/en_US/fbevents.js');
 
     fbq('init', '<%= tracker_options[:id] %>');
+    fbq('init', '<%= tracker_options[:id_two] %>');
     fbq('track', "PageView");
   }
 </script>
