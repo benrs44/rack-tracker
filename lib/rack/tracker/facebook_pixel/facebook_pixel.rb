@@ -1,6 +1,7 @@
 class Rack::Tracker::FacebookPixel < Rack::Tracker::Handler
   self.position = :body
   self.allowed_tracker_options = [:id]
+  self.allowed_tracker_options = [:id_two]
 
   class Event < OpenStruct
     def write
